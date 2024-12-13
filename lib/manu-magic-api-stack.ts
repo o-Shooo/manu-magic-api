@@ -9,7 +9,7 @@ export class ManuMagicApiStack extends cdk.Stack {
     super(scope, id, props);
 
     const fn = new NodejsFunction(this, "lambda", {
-      entry: "lambda/index.ts",
+      entry: "src/lambda.ts",
       handler: "handler",
       runtime: lambda.Runtime.NODEJS_22_X,
     });

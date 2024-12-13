@@ -2,7 +2,7 @@
   "name": "manu-magic-api",
   "version": "0.1.0",
   "bin": {
-    "manu-magic-api": "bin/manu-magic-api.js"
+    "manu-magic-api": "src/bin/manu-magic-api.js"
   },
   "scripts": {
     "build": "tsc",
