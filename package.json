@@ -9,11 +9,11 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk",
-    "prepare": "husky",
+    "deploy": "cdk deploy",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
