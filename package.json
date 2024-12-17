@@ -6,10 +6,10 @@
     "manu-magic-api": "src/bin/manu-magic-api.js"
   },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
     "test": "jest",
     "deploy": "cdk deploy",
+    "tsc": "tsc --noEmit",
+    "tsc:watch": "tsc -w --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -17,8 +17,11 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "tsc",
+      "tsc --noEmit",
       "eslint .",
+      "prettier --write"
+    ],
+    "*.{json}": [
       "prettier --write"
     ]
   },
