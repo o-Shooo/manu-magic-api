@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node -esm --prefer-ts-exts bin/manu-magic-api.ts",
+  "app": "npx tsx bin/manu-magic-api.ts",
   "watch": {
     "include": ["**"],
     "exclude": [
